@@ -1,0 +1,11 @@
+<h2>Color picker</h2>
+<label>
+  Color:
+  <input type="text" #color (input)="color.value">
+</label>
+<br >
+<br >
+<br >
+<br >
+<br >
+<div [ngStyle]="{'background-color': color.value, 'width': '500px', 'height': '500px'}" ></div>
